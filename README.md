@@ -1,4 +1,4 @@
 ## WIP
 ### ResumeBuilder
 
-##### Automating Applying process
+##### Automating Job Process

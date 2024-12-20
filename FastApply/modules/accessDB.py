@@ -4,7 +4,7 @@ class accessDB:
     def __init__(self):
         try:
             # Establish connection to SQLite database
-            self.con = sqlite3.connect("/Users/reddy/Documents/GitHub/ResumeBuilder/ResumeBuilder/dbs/ResumeBuilder.db")
+            self.con = sqlite3.connect("/Users/reddy/Documents/GitHub/FastApply/FastApply/dbs/FastApply.db")
             self.con.execute('PRAGMA foreign_keys = ON;')  # Enforce foreign key constraints
             self.cur = self.con.cursor()
             print("Database connection established successfully.")

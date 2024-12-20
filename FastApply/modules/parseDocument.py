@@ -26,7 +26,7 @@ class parseDocument():
         #     text += (f"\n {paragraph.text}")
         return document
     
-    def save_file(document, filename="ResumeBuilder/output/shashankreddy.docx"):
+    def save_file(document, filename="FastApply/output/shashankreddy.docx"):
         """
         Input: String value of Job description
         Output: 

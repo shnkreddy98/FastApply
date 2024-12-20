@@ -9,7 +9,7 @@ class structureDocx():
 
     def create_document(new_resume_text, user_name):
         # Load the existing document
-        resume_template = Document("ResumeBuilder/inputs/template.docx")
+        resume_template = Document("FastApply/inputs/template.docx")
         new_resume = Document()
 
         new_resume_text = new_resume_text.split("\n")
@@ -28,5 +28,5 @@ class structureDocx():
                     new_paragraph.add_run(new_resume_text[i]).font.name = run.font.name
 
         # Save the new document
-        resume_template.save(f"ResumeBuilder/outputs/{user_name}.docx")
+        resume_template.save(f"FastApply/outputs/{user_name}.docx")
 

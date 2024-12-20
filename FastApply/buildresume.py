@@ -16,7 +16,7 @@ if __name__=="__main__":
     # Get resume and store in cache for faster access
     # jd_filename = "ResumeBuilder/jd/coherent.docx"
     # jd = parseDocument.read_file(jd_filename)
-    jdfile = parseDocument.read_file("/Users/reddy/Documents/GitHub/ResumeBuilder/ResumeBuilder/jd/coherent.docx")
+    jdfile = parseDocument.read_file("/Users/reddy/Documents/GitHub/FastApply/FastApply/jd/coherent.docx")
     jd_texts = [paragraph.text for paragraph in jdfile.paragraphs]
     jd_combined = "\n".join(paragraph.text for paragraph in jdfile.paragraphs)
 

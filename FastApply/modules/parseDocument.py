@@ -1,17 +1,31 @@
 from docx import Document
 import re
 from datetime import datetime
+import json
+
+import streamlit as st
 
 class parseDocument():
 
     def __init__(self):
         pass
 
-    def format_date(date_str):
+    def get_datetime(date_str):
             try:
                 return datetime.strptime(date_str, "%b-%Y").date()
             except ValueError:
                 return None
+            
+    def put_datestr(d):
+        return d.strftime("%b %Y") if d else "Present"
+    
+    def convert_datetime_in_string(json_string):
+        # Pattern to match datetime.date(Y, M, D)
+        date_pattern = re.compile(r"datetime\.date\((\d{4}),\s*(\d{1,2}),\s*(\d{1,2})\)")
+
+        # Replace with "YYYY-MM-DD" format
+        formatted_string = date_pattern.sub(r'"\1-\2-\3"', json_string)
+        return formatted_string
 
     def read_file(documentfilename):
         """
@@ -34,7 +48,7 @@ class parseDocument():
         """
         document.save(filename)
         print(f"Resume Saved at {filename}")
-
+    
     def extract_details(docx_file):
         doc = Document(docx_file)
         data = {
@@ -81,15 +95,15 @@ class parseDocument():
                 if match:
                     company, role, start_date, end_date = match.groups()
                     data["work_experience"].append({
-                        "company": company.strip(),
-                        "role": role.strip(),
-                        "start_date": parseDocument.format_date(start_date),
-                        "end_date": parseDocument.format_date(end_date),
-                        "description": ""
+                        "exp_company": company.strip(),
+                        "exp_role": role.strip(),
+                        "exp_start_date": parseDocument.get_datetime(start_date),
+                        "exp_end_date": parseDocument.get_datetime(end_date),
+                        "exp_description": ""
                     })
                 else:
                     if data["work_experience"]:
-                            data["work_experience"][-1]["description"] = data["work_experience"][-1].get("description", "") + line + " "
+                            data["work_experience"][-1]["exp_description"] = data["work_experience"][-1].get("exp_description", "") + line + " "
             elif current_section == "skills":
                 data["skills"] += line + " "
             elif current_section == "projects":
@@ -98,28 +112,28 @@ class parseDocument():
                 if match:
                     project_name, start_date, end_date = match.groups()
                     data["projects"].append({
-                        "project_name": project_name.strip(),
-                        "start_date": parseDocument.format_date(start_date),
-                        "end_date": parseDocument.format_date(end_date),
-                        "description": ""
+                        "proj_name": project_name.strip(),
+                        "proj_start_date": parseDocument.get_datetime(start_date),
+                        "proj_end_date": parseDocument.get_datetime(end_date),
+                        "proj_description": ""
                     })
                 else:
                     if data["projects"]:
-                        data["projects"][-1]["description"] += line + " "
+                        data["projects"][-1]["proj_description"] += line + " "
             elif current_section == "education":
                 # Extract education details (MMM-YYYY format)
                 match = re.match(r'^(.*?)\s*\|\s*(.*?)\s+(\w{3}\s\d{4})\s+[–-]\s+(\w{3}\s\d{4})$', line)
                 if match:
                     course, institution, start_date, end_date = match.groups()
                     data["education"].append({
-                        "course": course.strip(),
-                        "institution": institution.strip(),
-                        "start_date": parseDocument.format_date(start_date),
-                        "end_date": parseDocument.format_date(end_date)
+                        "edu_course": course.strip(),
+                        "edu_institution": institution.strip(),
+                        "edu_start_date": parseDocument.get_datetime(start_date),
+                        "edu_end_date": parseDocument.get_datetime(end_date)
                     })
         
         # Clean up trailing spaces
         data["summary"] = data["summary"].strip()
         data["skills"] = data["skills"].strip()
         return data
-
+    

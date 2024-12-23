@@ -33,8 +33,13 @@ class requestOpenAI:
                             and no extra content before or after the message. Make sure the content 
                             will pass ATS and keep the content length similar to what is already there. 
                             Here is the data: ({user_data}, {work_exp_data}, {projects_data}, {education_data}) 
-                            and here is the Job Description: {jd}"""
+                            and here is the Job Description: {jd}. Make sure the data has double quotes for dictionary 
+                            and inside dictionary the content has single quotes, make sure the description content is not 
+                            smalled than before, keep it same not less not more but change content"""
             }],
         )
+        if isinstance(response, str):
+            requestOpenAI.get_new_resume(user_data, work_exp_data, projects_data, education_data, jd)
+        
         return response
 

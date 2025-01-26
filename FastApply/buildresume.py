@@ -15,17 +15,18 @@ OUTPUTSOURCE = "/Users/reddy/Documents/GitHub/FastApply/FastApply/outputs"
 
 if __name__=="__main__":
     openai_api = os.getenv('OPENAI_API')
-
-    # Get resume and store in cache for faster access
-    # jd_filename = "ResumeBuilder/jd/coherent.docx"
-    # jd = parseDocument.read_file(jd_filename)
-    jdfile = parseDocument.read_file(f"{INPUTSOURCE}/jd/coherent.docx")
-    jd_texts = [paragraph.text for paragraph in jdfile.paragraphs]
-    jd_combined = "\n".join(paragraph.text for paragraph in jdfile.paragraphs)
-
     # accessDB.create_tables()
     # docx_file = SOURCEFILE
     uploaded_resume = st.file_uploader("Choose a Resume or start filling details")
+    
+    # Get resume and store in cache for faster access
+    # jd_filename = "ResumeBuilder/jd/coherent.docx"
+    # jd = parseDocument.read_file(jd_filename)
+    # jdfile = parseDocument.read_file(f"{INPUTSOURCE}/jd/coherent.docx")
+    # jd_texts = [paragraph.text for paragraph in jdfile.paragraphs]
+    # jd_combined = "\n".join(paragraph.text for paragraph in jdfile.paragraphs)
+    jd_combined = st.text_area("Enter Job Description here")
+
     details = None
     if st.button("Parse Resume"):
         details = parseDocument.extract_details(uploaded_resume)
@@ -34,6 +35,11 @@ if __name__=="__main__":
         user_data, work_exp_data, projects_data, education_data = landingPageSections.get_details(details)
     else:
         user_data, work_exp_data, projects_data, education_data = landingPageSections.get_details()
+
+    st.write("User Data: ", user_data)
+    st.write("Work Experience Data: ", work_exp_data)
+    st.write("Projects Data: ", projects_data)
+    st.write("Education Data: ", education_data)
 
     if st.button("Create a new Resume"):
         resume_builder = requestOpenAI()

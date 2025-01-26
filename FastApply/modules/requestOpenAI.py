@@ -4,6 +4,17 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+APIRUN = int(os.getenv("APIRUN"))
+
+def replace_env(file, key, value):
+    with open(file, "r") as f:
+        lines = f.readlines()
+    index=[i for i, line in enumerate(lines) if line.startswith(key)]
+    lines[index[0]]=f"{key}={str(value)}\n"
+    with open(file, "w") as f:
+        f.writelines(lines)
+    
+
 class requestOpenAI:
     def __init__(self):
         self.client = OpenAI(
@@ -11,6 +22,9 @@ class requestOpenAI:
         )
     
     def get_new_resume(self, user_data, work_exp_data, projects_data, education_data, jd):
+        global APIRUN
+        APIRUN += 1
+        replace_env(".env", "APIRUN", APIRUN)
         response = self.client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[{

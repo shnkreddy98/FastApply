@@ -1,4 +1,5 @@
 import streamlit as st
+from datetime import datetime
 
 class landingPageSections:
 
@@ -90,30 +91,35 @@ class landingPageSections:
         # Display work experience
         st.write("### Work Experience")
         for i, section in enumerate(st.session_state.work_experience):
-            st.session_state.work_experience[i]["exp_company"] = st.text_input(
+            st.session_state.work_experience[i]["work_exp_company"] = st.text_input(
                 f"Company Name for Work Experience {i + 1}",
-                key=f"exp_company_name_{i}",
-                value=section.get('exp_company', '')
+                key=f"work_exp_company_name_{i}",
+                value=section.get('work_exp_company', '')
             )
-            st.session_state.work_experience[i]["exp_role"] = st.text_input(
+            st.session_state.work_experience[i]["work_exp_role"] = st.text_input(
                 f"Role for Work Experience {i + 1}",
-                key=f"exp_role_{i}",
-                value=section.get('exp_role', '')
+                key=f"work_exp_role_{i}",
+                value=section.get('work_exp_role', '')
             )
-            st.session_state.work_experience[i]["exp_start_date"] = st.date_input(
+            st.session_state.work_experience[i]["work_exp_location"] = st.text_input(
+                f"Location for Work Experience {i + 1}",
+                key=f"work_exp_location_{i}",
+                value=section.get('work_exp_location', '')
+            )
+            st.session_state.work_experience[i]["work_exp_start_date"] = st.date_input(
                 f"Start Date for Work Experience {i + 1}",
-                key=f"exp_start_date_{i}",
-                value=section.get('exp_start_date', '')
+                key=f"work_exp_start_date_{i}",
+                value=None ## Will be looked into later
             )
-            st.session_state.work_experience[i]["exp_end_date"] = st.date_input(
+            st.session_state.work_experience[i]["work_exp_end_date"] = st.date_input(
                 f"End Date for Work Experience {i + 1}",
-                key=f"exp_end_date_{i}",
-                value=section.get('exp_end_date', '')
+                key=f"work_exp_end_date_{i}",
+                value=None ## Will be looked into later
             )
-            st.session_state.work_experience[i]["exp_description"] = st.text_area(
+            st.session_state.work_experience[i]["work_exp_description"] = st.text_area(
                 f"Description for Work Experience {i + 1}",
-                key=f"exp_description_{i}",
-                value=section.get('exp_description', '')
+                key=f"work_exp_description_{i}",
+                value=section.get('work_exp_description', '')
             )
             st.markdown("---")  # Add a divider between experiences
         
@@ -135,14 +141,14 @@ class landingPageSections:
             st.session_state.projects[i]["proj_start_date"] = st.date_input(
                 f"Start Date for Project {i + 1}",
                 key=f"proj_start_date_{i}",
-                value=section.get('proj_start_date', '')
+                value=None ## Will be looked into later
             )
             st.session_state.projects[i]["proj_end_date"] = st.date_input(
                 f"End Date for Project {i + 1}",
                 key=f"proj_end_date_{i}",
-                value=section.get('proj_end_date', '')
+                value=None ## Will be looked into later
             )
-            st.session_state.projects[i]["proj_description"] = st.text_input(
+            st.session_state.projects[i]["proj_description"] = st.text_area(
                 f"Description for Project {i + 1}",
                 key=f"proj_description{i}",
                 value=section.get('proj_description', '')
@@ -172,12 +178,12 @@ class landingPageSections:
             st.session_state.education[i]["edu_start_date"] = st.date_input(
                 f"Start Date for Course {i + 1}",
                 key=f"edu_start_date_{i}",
-                value=section.get('edu_start_date', '')
+                value=None ## Will be looked into later
             )
             st.session_state.education[i]["edu_end_date"] = st.date_input(
                 f"End Date for Course {i + 1}",
                 key=f"edu_end_date_{i}",
-                value=section.get('edu_end_date', '')
+                value=None ## Will be looked into later
             )
             st.markdown("---")  # Add a divider between experiences
 
@@ -201,3 +207,4 @@ class landingPageSections:
         edu = {"education": st.session_state.education}
 
         return user_data, work_exp, proj, edu
+

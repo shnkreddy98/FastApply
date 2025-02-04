@@ -1,24 +1,28 @@
 import sqlite3
 import streamlit as st
 import hashlib
+import json
 
+ERRORS = 0
 INSERTQUERY = "INSERT OR IGNORE INTO {} VALUES ({});"
 
 user_table_query = """CREATE TABLE IF NOT EXISTS user (
+                      user_email_id TEXT PRIMARY KEY,
                       user_name TEXT NOT NULL,
-                      user_email TEXT UNIQUE NOT NULL,
                       user_phone TEXT,
                       user_city TEXT,
                       user_linkedin_link TEXT,
                       user_github_link TEXT,
-                      user_summary TEXT);
+                      user_summary TEXT,
+                      resume_id INT NOT NULL);
                   """
 
 user_skill_table_query = """CREATE TABLE IF NOT EXISTS userskills (
                             skill_id TEXT PRIMARY KEY,
                             skill_name TEXT NOT NULL,
-                            user_email TEXT,
-                            FOREIGN KEY(user_email) REFERENCES user(user_email) ON DELETE CASCADE);
+                            resume_id INT NOT NULL,
+                            email_id TEXT NOT NULL,
+                            FOREIGN KEY(email_id) REFERENCES user(user_email_id) ON DELETE CASCADE);
                          """
 
 workexp_table_query = """CREATE TABLE IF NOT EXISTS workexp (
@@ -29,8 +33,9 @@ workexp_table_query = """CREATE TABLE IF NOT EXISTS workexp (
                          workexp_from DATE,
                          workexp_to DATE,
                          workexp_description TEXT,
-                         user_email TEXT NOT NULL,
-                         FOREIGN KEY(user_email) REFERENCES user(user_email) ON DELETE CASCADE);
+                         resume_id INT NOT NULL,
+                         email_id TEXT NOT NULL,
+                         FOREIGN KEY(email_id) REFERENCES user(user_email_id) ON DELETE CASCADE);
                       """
 
 proj_table_query = """CREATE TABLE IF NOT EXISTS proj (
@@ -40,8 +45,9 @@ proj_table_query = """CREATE TABLE IF NOT EXISTS proj (
                       proj_from DATE,
                       proj_to DATE,
                       proj_description TEXT,
-                      user_email TEXT NOT NULL,
-                      FOREIGN KEY(user_email) REFERENCES user(user_email) ON DELETE CASCADE);
+                      resume_id INT NOT NULL,
+                      email_id TEXT NOT NULL,
+                      FOREIGN KEY(email_id) REFERENCES user(user_email_id) ON DELETE CASCADE);
                   """
       
 edu_table_query = """CREATE TABLE IF NOT EXISTS edu ( 
@@ -51,25 +57,30 @@ edu_table_query = """CREATE TABLE IF NOT EXISTS edu (
                      edu_course TEXT,
                      edu_from DATE,
                      edu_to DATE,
-                     user_email TEXT NOT NULL,
-                     FOREIGN KEY(user_email) REFERENCES user(user_email) ON DELETE CASCADE);
+                     resume_id INT NOT NULL,
+                     email_id TEXT NOT NULL,
+                     FOREIGN KEY(email_id) REFERENCES user(user_email_id) ON DELETE CASCADE);
                  """
 
 jobs_table_query = """CREATE TABLE IF NOT EXISTS jobs (
+                      job_id TEXT PRIMARY KEY,
                       job_link TEXT NOT NULL,
                       job_description TEXT,
                       company_name TEXT,
-                      user_email TEXT NOT NULL,
-                      FOREIGN KEY(user_email) REFERENCES user(user_email) ON DELETE CASCADE);
+                      resume_id INT NOT NULL,
+                      email_id TEXT NOT NULL,
+                      FOREIGN KEY(email_id) REFERENCES user(user_email_id) ON DELETE CASCADE);
                    """
 
 companies_table_query = """CREATE TABLE IF NOT EXISTS companies (
+                           company_id TEXT PRIMARY KEY,
                            company_name TEXT NOT NULL UNIQUE,
                            job_link TEXT NOT NULL,
                            FOREIGN KEY(job_link) REFERENCES jobs(job_link) ON DELETE CASCADE);
                         """
 
 hiring_manager_table_query = """CREATE TABLE IF NOT EXISTS hiringmanagers (
+                                hiring_manager_id TEXT PRIMARY KEY,
                                 hiring_manager_fn TEXT NOT NULL,
                                 hiring_manager_ln TEXT NOT NULL,
                                 company_name TEXT NOT NULL,
@@ -85,39 +96,58 @@ ALLTABLES = {'user': user_table_query,
              'companies': companies_table_query,
              'hiringmanagers': hiring_manager_table_query}
 
+def get_resume_counter(jsonfile):
+    f = open(jsonfile)
+    data = json.load(f)
+    counter = data['resume']
+
+    return int(counter)
+
+def put_resume_counter(resumecounter, jsonfile):
+    diction = {"resume": int(resumecounter)}
+    json_object = json.dumps(diction, indent=4)
+
+    with open(jsonfile, "w") as f:
+        f.write(json_object)
+
+
 def generate_hash(record):
     key = f"{record}"
     return hashlib.md5(key.encode()).hexdigest()
 
 def createTables(cur, tables_present):
-    global ALLTABLES, alter_user_table_query
+    global ERRORS, ALLTABLES, alter_user_table_query
     try:
         for key, value in ALLTABLES.items():
             if key not in tables_present:
                 cur.execute(value)
     except Exception as e:
+        ERRORS = 1
         st.error(f"Error at {key}")
         return
 
 def insertToDb(con, cur, key, data):
+    global ERRORS
     try:
         cur.execute(INSERTQUERY.format(key, data))
         con.commit()
     except Exception as e:
-        st.error(f"{e}, {key}")
+        ERRORS = 1
+        st.error(f"{e}, {key}, {data}")
 
-def insertValues(con, cur, user_data):
+def insertValues(con, cur, user_data, resume_counter):
     global ALLTABLES, INSERTQUERY
     for key, value in ALLTABLES.items():
         if key == 'user':
             inp_data = f"""
-                        '{user_data.get('Name', '')}',
                         '{user_data.get('Email', '')}',
+                        '{user_data.get('Name', '')}',
                         '{user_data.get('Phone', '')}',
                         '{user_data.get('Location', '')}',
                         '{user_data.get('LinkedIn', '')}',
                         '{user_data.get('GitHub', '')}',
-                        '{user_data.get('Summary', '')}'
+                        '{user_data.get('Summary', '')}',
+                        '{resume_counter}'
                         """
             insertToDb(con, cur, key, inp_data)
         if key == 'userskills':
@@ -128,6 +158,7 @@ def insertValues(con, cur, user_data):
                     inp_data = f"""
                                 '{hash_key}',
                                 '{skill}',
+                                '{resume_counter}',
                                 '{user_data.get('Email', '')}'
                                 """
                     insertToDb(con, cur, key, inp_data)
@@ -144,6 +175,7 @@ def insertValues(con, cur, user_data):
                                 '{work_experience.get('workexp_from', '')}',
                                 '{work_experience.get('workexp_to', '')}',
                                 '{work_experience.get('workexp_description', '')}',
+                                '{resume_counter}',
                                 '{user_data.get('Email', '')}'
                                 """
                     insertToDb(con, cur, key, inp_data)
@@ -159,6 +191,7 @@ def insertValues(con, cur, user_data):
                                 '{project.get('proj_from', '')}',
                                 '{project.get('proj_to', '')}',
                                 '{project.get('proj_description', '')}',
+                                '{resume_counter}',
                                 '{user_data.get('Email', '')}'
                                 """
                     insertToDb(con, cur, key, inp_data)
@@ -174,6 +207,7 @@ def insertValues(con, cur, user_data):
                                 '{education.get('edu_major', '')}',
                                 '{education.get('edu_from', '')}',
                                 '{education.get('edu_to', '')}',
+                                '{resume_counter}',
                                 '{user_data.get('Email', '')}'
                                 """
                     insertToDb(con, cur, key, inp_data)
@@ -182,19 +216,26 @@ def insertValues(con, cur, user_data):
         st.write(cur.fetchall())
 
 
-def addToDb(db_path, data):
-    con = sqlite3.connect(db_path)
-    con.execute('PRAGMA foreign_keys = ON;')
-    cur = con.cursor()
+def addToDb(conn, data):
+    global ERRORS
+    conn.execute('PRAGMA foreign_keys = ON;')
+    cur = conn.cursor()
+    jsonfile = "./ResumeBuilder/inputs/counter.json"
+
+    resume_counter = get_resume_counter(jsonfile)
 
     st.write(data)
-    list_tables_query = """Select name FROM sqlite_master
+    list_tables_query = """SELECT name FROM sqlite_master
                            WHERE type='table';"""
 
     cur.execute(list_tables_query)
     tables = [table[0] for table in cur.fetchall()]
     createTables(cur, tables_present=tables)
 
-    insertValues(con, cur, data)
+    insertValues(conn, cur, data, resume_counter)
+
+    if not ERRORS:
+        resume_counter += 1
+        put_resume_counter(resume_counter, jsonfile)
     
 

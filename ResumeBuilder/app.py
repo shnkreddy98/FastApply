@@ -3,12 +3,21 @@ from dbmanagement import addToDb
 from resumeGenerator import ResumeGenerator
 
 import streamlit as st
+import sqlite3
+import streamlit as st
 
 db_path = "./dbs/ResumeBuilder.db"
+
+con = sqlite3.connect(db_path)
+
+
+
+
+
 data = getUserDetails()
 
 if st.button("Add to the Database"):
-    addToDb(db_path, data)
+    addToDb(con, data)
 
 if st.button("Generate Resume"):
     generator = ResumeGenerator(f"./ResumeBuilder/inputs/templates/template.docx")

@@ -5,6 +5,10 @@ import json
 
 ERRORS = 0
 INSERTQUERY = "INSERT OR IGNORE INTO {} VALUES ({});"
+DBPATH = "./dbs/ResumeBuilder.db"
+CONN = sqlite3.connect(DBPATH)
+cur = CONN.cursor()
+CONN.execute('PRAGMA foreign_keys = ON;')
 
 user_table_query = """CREATE TABLE IF NOT EXISTS user (
                       user_email_id TEXT PRIMARY KEY,
@@ -95,6 +99,25 @@ ALLTABLES = {'user': user_table_query,
              'jobs': jobs_table_query,
              'companies': companies_table_query,
              'hiringmanagers': hiring_manager_table_query}
+
+def getData():
+    cur.execute("SELECT * FROM user;")
+    users = cur.fetchall()
+
+    cur.execute("SELECT * FROM userskills;")
+    skills = cur.fetchall()
+    
+    cur.execute("SELECT * FROM workexp;")
+    workexp = cur.fetchall()
+    
+    cur.execute("SELECT * FROM edu;")
+    edu = cur.fetchall()
+    
+    cur.execute("SELECT * FROM proj;")
+    proj = cur.fetchall()
+
+    return (users, skills, workexp, edu, proj)
+
 
 def get_resume_counter(jsonfile):
     f = open(jsonfile)
@@ -216,11 +239,8 @@ def insertValues(con, cur, user_data, resume_counter):
         st.write(cur.fetchall())
 
 
-def addToDb(conn, data):
+def addToDb(data, jsonfile):
     global ERRORS
-    conn.execute('PRAGMA foreign_keys = ON;')
-    cur = conn.cursor()
-    jsonfile = "./ResumeBuilder/inputs/counter.json"
 
     resume_counter = get_resume_counter(jsonfile)
 
@@ -232,7 +252,7 @@ def addToDb(conn, data):
     tables = [table[0] for table in cur.fetchall()]
     createTables(cur, tables_present=tables)
 
-    insertValues(conn, cur, data, resume_counter)
+    insertValues(CONN, cur, data, resume_counter)
 
     if not ERRORS:
         resume_counter += 1

@@ -163,3 +163,8 @@ cython_debug/
 
 .proxies
 .ipynb
+
+
+*.db
+*.docx
+*.pdf

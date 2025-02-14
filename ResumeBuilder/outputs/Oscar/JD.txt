@@ -1,0 +1,261 @@
+# Site Not Loading?
+
+It looks like JavaScript is disabled in your browser. Unfortunately, you won’t
+be able to use hioscar.com without JavaScript enabled. Your browser’s support
+site can show you [how to enable JavaScript
+](https://support.google.com/chrome/answer/114662).
+
+Skip to main content
+
+  * [1-855-672-2788](tel:1-855-672-2788)
+  *  
+
+English
+
+  *  
+
+Log in
+
+[Oscar home](/)
+
+  * Shop Plans
+
+![](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjUiIHZpZXdCb3g9IjAgMCA5IDUiPgogICAgPHBhdGggZmlsbD0iIzVDNkI3RSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNOC40ODUuNDlMNC4yNDMgNC43MzIgMCAuNDl6Ii8+Cjwvc3ZnPgo=)
+
+  * Member Resources
+
+![](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjUiIHZpZXdCb3g9IjAgMCA5IDUiPgogICAgPHBhdGggZmlsbD0iIzVDNkI3RSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNOC40ODUuNDlMNC4yNDMgNC43MzIgMCAuNDl6Ii8+Cjwvc3ZnPgo=)
+
+  * For Brokers & Providers
+
+![](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjUiIHZpZXdCb3g9IjAgMCA5IDUiPgogICAgPHBhdGggZmlsbD0iIzVDNkI3RSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNOC40ODUuNDlMNC4yNDMgNC43MzIgMCAuNDl6Ii8+Cjwvc3ZnPgo=)
+
+  * About Us
+
+![](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjUiIHZpZXdCb3g9IjAgMCA5IDUiPgogICAgPHBhdGggZmlsbD0iIzVDNkI3RSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNOC40ODUuNDlMNC4yNDMgNC43MzIgMCAuNDl6Ii8+Cjwvc3ZnPgo=)
+
+[Find a Doctor](/care-options)
+
+  * [Overview](/careers)
+  * [All jobs](/careers/search)
+  * [Data](/careers/search?department=2109&location=-1)
+
+# Analytics Engineer II
+
+Remote
+
+Hi, we're Oscar. We're hiring an Analytics Engineer II to join our Data team.
+
+Oscar is the first health insurance company built around a full stack
+technology platform and a focus on serving our members. We started Oscar in
+2012 to create the kind of health insurance company we would want for
+ourselves—one that behaves like a doctor in the family.
+
+### About the role
+
+The Analytics Engineer II plays a leading role in the design, implementation,
+optimization, and maintenance of Oscar’s analytics platform, including data
+transformation infrastructure and downstream semantic layer systems. You will
+help Oscar transition their CDS (Certified Datasets) from an in-house data
+transformation tool to DBT.  You will build and architect our DBT
+implementation, with an eye towards improving our development workflows.  You
+will also help manage self-service BI in Looker, onboarding new dimensional
+data models with performance and usability in mind.  You will collaborate with
+business users and subject matter experts to explore data, define
+requirements, and deliver data products to our end-users.  You’ll help improve
+and enhance our analytics stack on an ongoing basis as we look to expand our
+capabilities in data services and governance.
+
+You will report to the Associate Director, Data.
+
+**Work Location:**
+
+Oscar is a blended work culture where everyone, regardless of work type or
+location, feels connected to their teammates, our culture and our mission.
+
+If you live within commutable distance to our New York City office (in Hudson
+Square), our Tempe office (off the 101 at University Dr), or our Los Angeles
+office (in Marina Del Rey), you will be expected to come into the office at
+least two days each week. Otherwise, this is a remote / work-from-home role.
+
+You must reside in one of the following states: Alabama, Arizona, California,
+Colorado, Connecticut, Florida, Georgia, Illinois, Indiana, Iowa, Kansas,
+Kentucky, Maine, Maryland, Massachusetts, Michigan, Minnesota, Missouri,
+Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, Ohio,
+Oregon, Pennsylvania, Rhode Island, South Carolina, Tennessee, Texas, Utah,
+Vermont, Virginia, Washington, or Washington, D.C. Note, this list of states
+is subject to change. #LI-Remote
+
+**Pay Transparency:**
+
+The base pay for this role in the states of California, Connecticut, New
+Jersey, New York, and Washington is: $119,200 - $156,450 per year. You are
+also eligible for employee benefits, participation in Oscar's unlimited
+vacation program, company equity grants, and annual performance bonuses.
+
+### Responsibilities
+
+  * Develop an understanding and expertise of Oscar’s analytics technologies and tools, contributing to the continuous improvement of Oscar’s analytics ecosystem.
+  * Play a role in the design, build, and implementation of the next generation of CDS, utilizing technologies such as DBT, Github actions, and others as necessary with an eye towards improving data governance and developer productivity.
+  * Optimize our existing data models so they are more reliable, efficient, fast, and scalable using dimensional modeling principles.  
+  * Contribute to the administration of the analytics platform, including but not limited to active participation in support channels and actioning on access requests.
+  * Lead cross-functional short-to-mid term projects focused on optimizing and scaling the analytics tech stack, ensuring its efficiency and effectiveness in meeting business needs. Participate in “build or buy” analyses of additional services required.
+  * Contribute to the development and documentation of best practices for engineering and analytics development, ensuring adherence to industry standards and internal guidelines.
+  * Work with other Analytics Engineers, Subject Matter Experts and Business stakeholders to explore data and define business requirements for one or more data transformation and/or downstream semantic layer systems.
+  * Contribute towards development of our BI tools, Looker and Looker Studio Pro, improving performance, adding new content, and  maintaining our process automation scripts.  
+  * Train and mentor data scientists and data engineers in analytics engineering best practices.
+
+### Qualifications
+
+  * 3+ years of experience in Analytics Engineering, Data Science, or a related field.
+  * 3+ years of experience working with a variety of database languages, including SQL, DDL and DML with demonstrated ability to efficiently transform data and databases.
+  * 2+ years of experience developing in a semantic modeling language (e.g. LookML).
+  * 2+ years of experience developing within a modern data transformation tool like DBT.
+  * 2+ years of experience with cloud database tools (GCP, AWS, Azure).
+  * 1+ years of experience working with and presenting to non-technical stakeholders.
+
+### Bonus Points
+
+  * Experience developing within a Business Intelligence Platform like Looker, Tableau or Power BI.
+  * Experience integrating DBT and Looker (or equivalent ETL-to-BI integration).
+  * Experience working with healthcare data, analytics and reporting.
+  * Experience with GCP.
+  * A background in healthcare and/or insurance.
+  * Strong communication skills, verbal and written, as demonstrated by experience on at least 1 project or initiative requiring communication between technical and non-technical users.
+
+This is an authentic Oscar Health job opportunity. Learn more about how you
+can safeguard yourself from recruitment fraud[
+here](http://hioscar.com/careers/recruitment-fraud-alert).
+
+At Oscar, being an Equal Opportunity Employer means more than upholding
+discrimination-free hiring practices. It means that we cultivate an
+environment where people can be their most authentic selves and find both
+belonging and support. We're on a mission to change health care -- an
+experience made whole by our unique backgrounds and perspectives.
+
+**Pay Transparency:   **Final offer amounts, within the base pay set forth
+above, are determined by factors including your relevant skills, education,
+and experience. Full-time employees are eligible for benefits including:
+medical, dental, and vision benefits, 11 paid holidays, paid sick time, paid
+parental leave, 401(k) plan participation, life and disability insurance, and
+paid wellness time and reimbursements.
+
+**Reasonable Accommodation:** Oscar applicants are considered solely based on
+their qualifications, without regard to applicant’s disability or need for
+accommodation. Any Oscar applicant who requires reasonable accommodations
+during the application process should contact the Oscar Benefits Team
+(accommodations@hioscar.com) to make the need for an accommodation known.
+
+**California Residents:** For information about our collection, use, and
+disclosure of applicants’ personal information as well as applicants’ rights
+over their personal information, please see our [Notice to Job
+Applicants](https://www.hioscar.com/notice-to-job-applicants).
+
+Apply for this job
+
+### Share this job
+
+  * [](http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.hioscar.com%2Fcareers%2F6531163%3Fgh_jid%3D6531163 "Share on Facebook")
+  * [](http://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.hioscar.com%2Fcareers%2F6531163%3Fgh_jid%3D6531163&text=Oscar%20Insurance%20is%20looking%20for%20a%20Analytics%20Engineer%20II.%20Apply%20today%20at%20 "Share on Twitter")
+  * [](
+          https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.hioscar.com%2Fcareers%2F6531163%3Fgh_jid%3D6531163
+          &source=Oscar%20Health
+          &summary=
+          &title=
+         "Share on LinkedIn")
+  * [](mailto:?subject=
+          Oscar%20Insurance%20is%20hiring!
+          &body=Oscar%20Insurance%20is%20looking%20for%20a%20Analytics%20Engineer%20II.%20Apply%20today%20at%20http%3A%2F%2Fwww.hioscar.com%2Fcareers%2F6531163%3Fgh_jid%3D6531163
+         "Email this job to a friend")
+  * 
+
+Don't see the position you're looking for? [Name Your Dream
+Job!](/careers/3083308)
+
+[Oscar home](/)
+
+  * [![Facebook](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPG1hc2sgaWQ9Im1hc2swIiBtYXNrLXR5cGU9ImFscGhhIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTkiIGhlaWdodD0iMTgiPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAuMDAyMDc1MiAwSDE4LjAwMVYxNy44OTA3SDAuMDAyMDc1MlYwWiIgZmlsbD0id2hpdGUiLz4KPC9tYXNrPgo8ZyBtYXNrPSJ1cmwoI21hc2swKSI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTggOS4wMDMwMkMxOCA0LjAzMjQ2IDEzLjk3MDYgMC4wMDMwMjEyNCA5IDAuMDAzMDIxMjRDNC4wMjk0MyAwLjAwMzAyMTI0IDAgNC4wMzI0NiAwIDkuMDAzMDJDMCAxMy40OTUyIDMuMjkxMTcgMTcuMjE4NSA3LjU5Mzc1IDE3Ljg5MzdWMTEuNjA0Nkg1LjMwODU5VjkuMDAzMDJINy41OTM3NVY3LjAyMDIxQzcuNTkzNzUgNC43NjQ1OCA4LjkzNzM5IDMuNTE4NjUgMTAuOTkzMiAzLjUxODY1QzExLjk3NzkgMy41MTg2NSAxMy4wMDc4IDMuNjk0NDMgMTMuMDA3OCAzLjY5NDQzVjUuOTA5MjdIMTEuODcyOUMxMC43NTQ5IDUuOTA5MjcgMTAuNDA2MiA2LjYwMzAzIDEwLjQwNjIgNy4zMTQ3N1Y5LjAwMzAySDEyLjkwMjNMMTIuNTAzMyAxMS42MDQ2SDEwLjQwNjJWMTcuODkzN0MxNC43MDg4IDE3LjIxODUgMTggMTMuNDk1MiAxOCA5LjAwMzAyWiIgZmlsbD0iI0ZGRkZGRSIvPgo8L2c+Cjwvc3ZnPgo=)](https://www.facebook.com/OscarHealth)
+  * [![Youtube](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDBDNC4wMjk0NCAwIDAgNC4wMjk0NCAwIDlDMCAxMy45NzA2IDQuMDI5NDQgMTggOSAxOEMxMy45NzA2IDE4IDE4IDEzLjk3MDYgMTggOUMxOCA0LjAyOTQ0IDEzLjk3MDYgMCA5IDBaTTE0LjM5MzMgNi4yOTQxQzE0LjI2MzUgNS44MTIyMiAxMy44ODM2IDUuNDMyMjggMTMuNDAxNyA1LjMwMjU1QzEyLjUyMTQgNS4wNjE2MSA4Ljk5OTk4IDUuMDYxNjEgOC45OTk5OCA1LjA2MTYxQzguOTk5OTggNS4wNjE2MSA1LjQ3ODU3IDUuMDYxNjEgNC41OTgyMiA1LjI5MzI4QzQuMTI1NjEgNS40MjMwMSAzLjczNjQxIDUuODEyMjIgMy42MDY2NyA2LjI5NDFDMy4zNzUgNy4xNzQ0NSAzLjM3NSA5LjAwMDAyIDMuMzc1IDkuMDAwMDJDMy4zNzUgOS4wMDAwMiAzLjM3NSAxMC44MzQ5IDMuNjA2NjcgMTEuNzA1OUMzLjczNjQxIDEyLjE4NzggNC4xMTYzNSAxMi41Njc4IDQuNTk4MjIgMTIuNjk3NUM1LjQ4Nzg0IDEyLjkzODQgOC45OTk5OCAxMi45Mzg0IDguOTk5OTggMTIuOTM4NEM4Ljk5OTk4IDEyLjkzODQgMTIuNTIxNCAxMi45Mzg0IDEzLjQwMTcgMTIuNzA2OEMxMy44ODM2IDEyLjU3NyAxNC4yNjM1IDEyLjE5NzEgMTQuMzkzMyAxMS43MTUyQzE0LjYyNSAxMC44MzQ5IDE0LjYyNSA5LjAwOTI4IDE0LjYyNSA5LjAwOTI4QzE0LjYyNSA5LjAwOTI4IDE0LjYzNDIgNy4xNzQ0NSAxNC4zOTMzIDYuMjk0MVpNNy44Nzg2NiAxMC42ODY1TDEwLjgwNyA4Ljk5OTk3TDcuODc4NjYgNy4zMTM0MVYxMC42ODY1WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==)](https://www.youtube.com/user/OscarHealthInsurance)
+  * [![Twitter](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDBDNC4wMjk0NCAwIDAgNC4wMjk0NCAwIDlDMCAxMy45NzA2IDQuMDI5NDQgMTggOSAxOEMxMy45NzA2IDE4IDE4IDEzLjk3MDYgMTggOUMxOCA0LjAyOTQ0IDEzLjk3MDYgMCA5IDBaTTEzLjQxMDkgNy4zMzU5NFY3LjA1NDY5QzEzLjg0NjkgNi43NDUzMSAxNC4yMTI1IDYuMzUxNTYgMTQuNDkzNyA1LjkwMTU2QzE0LjEgNi4wODQzNyAxMy42NzgxIDYuMTk2ODggMTMuMjI4MSA2LjI1MzEzQzEzLjY3ODEgNS45NzE4OCAxNC4wMjk3IDUuNTUgMTQuMTk4NCA1LjAyOTY5QzEzLjc2MjUgNS4yODI4MSAxMy4yOTg0IDUuNDY1NjIgMTIuNzkyMiA1LjU2NDA2QzEyLjM5ODQgNS4xNDIxOSAxMS44MjE5IDQuODc1IDExLjE4OTEgNC44NzVDOS45NjU2MiA0Ljg3NSA4Ljk4MTI1IDUuODU5MzggOC45ODEyNSA3LjA4MjgxQzguOTgxMjUgNy4yNTE1NiA4Ljk5NTMxIDcuNDM0MzggOS4wMzc1IDcuNTg5MDZDNy4yMDkzNyA3LjQ5MDYyIDUuNTc4MTIgNi42MTg3NSA0LjQ5NTMxIDUuMjgyODFDNC4zMTI1IDUuNjA2MjUgNC4yIDUuOTg1OTQgNC4yIDYuMzkzNzVDNC4yIDcuMTY3MTkgNC41OTM3NSA3Ljg0MjE5IDUuMTg0MzcgOC4yMzU5NEM0LjgxODc1IDguMjIxODggNC40ODEyNSA4LjEyMzQ0IDQuMTg1OTQgNy45NTQ2OVY3Ljk4MjgxQzQuMTg1OTQgOS4wNTE1NiA0Ljk0NTMxIDkuOTM3NSA1Ljk1NzgxIDEwLjEzNDRDNS43NzUgMTAuMTkwNiA1LjU3ODEyIDEwLjIxODggNS4zODEyNSAxMC4yMTg4QzUuMjI2NTYgMTAuMjE4OCA1LjEgMTAuMjA0NyA0Ljk1OTM3IDEwLjE3NjZDNS4yMjY1NiAxMS4wNDg0IDYuMDQyMTkgMTEuNjk1MyA3LjAxMjUgMTEuNzA5NEM2LjI1MzEyIDEyLjMgNS4yOTY4OCAxMi42NTE2IDQuMjcwMzEgMTIuNjUxNkM0LjEwMTU2IDEyLjY1MTYgMy45MTg3NSAxMi42Mzc1IDMuNzUgMTIuNjIzNEM0LjczNDM4IDEzLjI0MjIgNS44ODc1IDEzLjYwNzggNy4xMzkwNiAxMy42MDc4QzExLjE4OTEgMTMuNjA3OCAxMy40MTA5IDEwLjI0NjkgMTMuNDEwOSA3LjMzNTk0WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==)](https://twitter.com/OscarHealth)
+  * [![Instagram](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDBDNC4wMjk0NCAwIDAgNC4wMjk0NCAwIDlDMCAxMy45NzA2IDQuMDI5NDQgMTggOSAxOEMxMy45NzA2IDE4IDE4IDEzLjk3MDYgMTggOUMxOCA0LjAyOTQ0IDEzLjk3MDYgMCA5IDBaTTkuMDAwMjMgNy4xMjQ4NUM3Ljk2NDczIDcuMTI0ODUgNy4xMjU1MyA3Ljk2NDUgNy4xMjU1MyA5QzcuMTI1NTMgMTAuMDM1NSA3Ljk2NDczIDEwLjg3NTEgOS4wMDAyMyAxMC44NzUxQzEwLjAzNTcgMTAuODc1MSAxMC44NzU0IDEwLjAzNTUgMTAuODc1NCA5QzEwLjg3NTQgNy45NjQ1IDEwLjAzNTcgNy4xMjQ4NSA5LjAwMDIzIDcuMTI0ODVaTTkuMDAwMjMgMTEuODg4NEM3LjQwNDk4IDExLjg4ODQgNi4xMTE4NiAxMC41OTUzIDYuMTExODYgOUM2LjExMTg2IDcuNDA0NzUgNy40MDQ5OCA2LjExMTYzIDkuMDAwMjMgNi4xMTE2M0MxMC41OTU1IDYuMTExNjMgMTEuODg4NiA3LjQwNDc1IDExLjg4ODYgOUMxMS44ODg2IDEwLjU5NTMgMTAuNTk1NSAxMS44ODg0IDkuMDAwMjMgMTEuODg4NFpNMTEuNDQxNiA2LjM3MjE2QzExLjM2NzQgNi4yNjExMyAxMS4zMjc5IDYuMTMwNjEgMTEuMzI3OSA1Ljk5NzExQzExLjMyODEgNS44MTgxNiAxMS4zOTkzIDUuNjQ2NTggMTEuNTI1OCA1LjUyMDA3QzExLjY1MjQgNS4zOTM1NiAxMS44MjQgNS4zMjI0NiAxMi4wMDI5IDUuMzIyMzdIMTIuMDAzMkMxMi4xMzY3IDUuMzIyNDMgMTIuMjY3MiA1LjM2MjA3IDEyLjM3ODIgNS40MzYyOEMxMi40ODkyIDUuNTEwNSAxMi41NzU2IDUuNjE1OTUgMTIuNjI2NyA1LjczOTMxQzEyLjY3NzcgNS44NjI2NyAxMi42OTEgNS45OTg0IDEyLjY2NDkgNi4xMjkzM0MxMi42Mzg4IDYuMjYwMjUgMTIuNTc0NSA2LjM4MDUgMTIuNDgwMSA2LjQ3NDg2QzEyLjM4NTYgNi41NjkyMyAxMi4yNjUzIDYuNjMzNDYgMTIuMTM0NCA2LjY1OTQ2QzEyLjAwMzQgNi42ODU0NSAxMS44Njc3IDYuNjcyMDMgMTEuNzQ0NCA2LjYyMDg5QzExLjYyMTEgNi41Njk3NSAxMS41MTU3IDYuNDgzMTkgMTEuNDQxNiA2LjM3MjE2Wk01LjY4MzE0IDEzLjM4NTFDNS44ODEyMyAxMy40NjIzIDYuMTc5MzEgMTMuNTUzNiA2LjcyNzczIDEzLjU3ODZDNy4zMjA0NyAxMy42MDU5IDcuNDk4MDggMTMuNjExMyA5LjAwMDIzIDEzLjYxMTNDMTAuNTAyNCAxMy42MTEzIDEwLjY4MDUgMTMuNjA1OSAxMS4yNzM0IDEzLjU3ODZDMTEuODIxOCAxMy41NTM3IDEyLjEyIDEzLjQ2MjMgMTIuMzE4IDEzLjM4NTFDMTIuNTgwNiAxMy4yODI5IDEyLjc2ODMgMTMuMTYwOSAxMi45NjUgMTIuOTY0NEMxMy4xNjE3IDEyLjc2NzggMTMuMjgzNSAxMi41ODA0IDEzLjM4NTcgMTIuMzE3OEMxMy40NjI1IDEyLjExOTcgMTMuNTU0MyAxMS44MjE2IDEzLjU3OTIgMTEuMjczMkMxMy42MDY1IDEwLjY3OTggMTMuNjEyIDEwLjUwMjIgMTMuNjEyIDkuMDAwMDRDMTMuNjEyIDcuNDk3OSAxMy42MDY1IDcuMzIwMjggMTMuNTc5MiA2LjcyNjg3QzEzLjU1NDMgNi4xNzg0NSAxMy40NjMgNS44ODAyOCAxMy4zODU3IDUuNjgyMjhDMTMuMjgzNSA1LjQxOTY2IDEzLjE2MiA1LjIzMjAyIDEyLjk2NSA1LjAzNTI3QzEyLjc2OCA0LjgzODUzIDEyLjU4MDYgNC43MTYzMSAxMi4zMTggNC42MTQ1MkMxMi4xMTk0IDQuNTM4MDIgMTEuODIxOCA0LjQ0NiAxMS4yNzM0IDQuNDIxMDJDMTAuNjggNC4zOTQyMSAxMC41MDE3IDQuMzg4MzEgOS4wMDAyMyA0LjM4ODMxQzcuNDk4NzYgNC4zODgzMSA3LjMyMDY1IDQuMzkzNzUgNi43Mjc3MyA0LjQyMTAyQzYuMTc5MzEgNC40NDU5NSA1Ljg4MTE0IDQuNTM3MyA1LjY4MzE0IDQuNjE0NTJDNS40MjAwNyA0LjcxNjMxIDUuMjMyODcgNC44MzgyNiA1LjAzNjEzIDUuMDM1MjdDNC44MzkzOSA1LjIzMjI5IDQuNzE3NjIgNS40MTk2NiA0LjYxNTM4IDUuNjgyMjhDNC41Mzg4OCA1Ljg4MDg3IDQuNDQ2ODYgNi4xNzg0NSA0LjQyMTg4IDYuNzI2ODdDNC4zOTUwNiA3LjMyMDI4IDQuMzg5MTcgNy40OTc5IDQuMzg5MTcgOS4wMDAwNEM0LjM4OTE3IDEwLjUwMjIgNC4zOTQ2MSAxMC42ODAzIDQuNDIxODggMTEuMjczMkM0LjQ0NjgxIDExLjgyMTYgNC41MzgxNiAxMi4xMTk4IDQuNjE1MzggMTIuMzE3OEM0LjcxNzE3IDEyLjU4MDQgNC44MzkxMiAxMi43Njc2IDUuMDM2MTMgMTIuOTY0NEM1LjIzMzE0IDEzLjE2MTEgNS40MjA1MiAxMy4yODI5IDUuNjgzMTQgMTMuMzg1MVpNNS4zMTU4MSAzLjY3MDM0QzUuNjczMTUgMy41MzEyOSA2LjA4MjM0IDMuNDM2MzQgNi42ODExNSAzLjQwOTA3QzcuMjgxMjMgMy4zODEzNSA3LjQ3MzExIDMuMzc1IDkuMDAwNjggMy4zNzVDMTAuNTI4MiAzLjM3NSAxMC43MiAzLjM4MTc5IDExLjMxOTggMy40MDkwN0MxMS45MTgxIDMuNDM1ODggMTIuMzI3MSAzLjUzMTI5IDEyLjY4NTEgMy42NzAzNEMxMy4wNTQ1IDMuODEzOTMgMTMuMzY4NSA0LjAwNjA4IDEzLjY4MTEgNC4zMTkxNEMxMy45OTM3IDQuNjMyMjEgMTQuMTg1OSA0Ljk0NTcyIDE0LjMyOTkgNS4zMTU1OEMxNC40Njg5IDUuNjcyOTIgMTQuNTYzOSA2LjA4MjA3IDE0LjU5MTIgNi42ODA5MkMxNC42MTg0IDcuMjgwNjggMTQuNjI0OCA3LjQ3MjQzIDE0LjYyNDggOUMxNC42MjQ4IDEwLjUyNzYgMTQuNjE4NCAxMC43MTg5IDE0LjU5MTIgMTEuMzE5MUMxNC41NjQzIDExLjkxNzkgMTQuNDY4OSAxMi4zMjY4IDE0LjMyOTkgMTIuNjg0NEMxNC4xODU5IDEzLjA1NDMgMTMuOTk0MSAxMy4zNjgzIDEzLjY4MTEgMTMuNjgwOUMxMy4zNjggMTMuOTkzNCAxMy4wNTQ1IDE0LjE4NTcgMTIuNjg0NiAxNC4zMjk3QzEyLjMyNzEgMTQuNDY4NyAxMS45MTgyIDE0LjU2MzcgMTEuMzE5MyAxNC41OTA5QzEwLjcxOTUgMTQuNjE4NyAxMC41Mjc4IDE0LjYyNSA5LjAwMDIzIDE0LjYyNUM3LjQ3MjY2IDE0LjYyNSA3LjI4MTIzIDE0LjYxODIgNi42ODExNSAxNC41OTA5QzYuMDgyMzQgMTQuNTYzNyA1LjY3MzgzIDE0LjQ2ODcgNS4zMTU4MSAxNC4zMjk3QzQuOTQ1NzMgMTQuMTg1NyA0LjYzMjM5IDEzLjk5MzMgNC4zMTkzNyAxMy42ODA5QzQuMDA2MzUgMTMuMzY4NCAzLjgxNDE2IDEzLjA1NDMgMy42NzA1NiAxMi42ODQ0QzMuNTMxNTEgMTIuMzI2OCAzLjQzNjU2IDExLjkxNzkgMy40MDkyOSAxMS4zMTkxQzMuMzgxNTcgMTAuNzE5MyAzLjM3NTIzIDEwLjUyNzYgMy4zNzUyMyA5QzMuMzc1MjMgNy40NzI0MyAzLjM4MTU3IDcuMjgwNjggMy40MDkyOSA2LjY4MDkyQzMuNDM2NTYgNi4wODIxMSAzLjUzMTUxIDUuNjczMTUgMy42NzA1NiA1LjMxNTU4QzMuODE0MTYgNC45NDU1IDQuMDA2MzEgNC42MzE3MSA0LjMxOTM3IDQuMzE5MTRDNC42MzI0NCA0LjAwNjU4IDQuOTQ1NzMgMy44MTM5MyA1LjMxNTgxIDMuNjcwMzRaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K)](https://www.instagram.com/oscarhealth/)
+
+Questions about our plans?
+
+Call us Monday - Friday 8am - 8pm
+
+For Individual & Family plans, [1-855-672-2788](tel:18556722788)
+
+For Small Group plans, [1-855-672-2784](tel:18556722784)
+
+TTY: 711
+
+  * Shop Plans
+
+    * [Individuals & Families](/individuals)
+
+    * [Businesses](/ichra)
+
+  * Our Experience
+
+    * [Oscar App](/app)
+
+    * [Your Care Team](/concierge)
+
+    * [Virtual Urgent Care](/virtual-urgent-care)
+
+  * About Us
+
+    * [Our Story](/about)
+
+    * [Investor Relations](https://ir.hioscar.com/overview)
+
+    * [Press](/press)
+
+    * [Careers](/careers)
+
+    * [Blog](/blog)
+
+  * Brokers
+
+    * [Partner with Us](https://business.hioscar.com/create-account)
+
+    * [Broker Experience](/brokers)
+
+    * [Frequently Asked Questions](/faq/section/for-brokers)
+
+  * Providers
+
+    * [Partner with Us](https://www.hioscar.com/form/request-to-join)
+
+    * [Provider Experience](/providers)
+
+    * [Provider Center](/providers/resources)
+
+    * [Frequently Asked Questions](https://provider.hioscar.com/resources)
+
+  * Resources
+
+    * [Search Doctors & Drugs](/search)
+
+    * [Individual Member Forms](/forms)
+
+    * [Clinical Guidelines](/clinical-guidelines)
+
+    * [Preventive Care](/benefits/preventive/)
+
+    * [GRIEVANCE FORM](/member/grievances/)
+
+    * [Prior Authorizations](/prior-authorization)
+
+  * © 2025 Oscar Insurance
+
+  * [Terms of Service](/legal/terms)
+  * [Privacy Policy](/legal/privacy)
+  * [Do Not Sell My Information](/privacy-request)
+  * [Legal and Compliance](/legal/compliance)
+  * [![Non-Discrimination Policy \(PDF\)](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxMCAxNCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYSIgZD0iTTEgMTZWNGg0djRoNHY4SDF6TTYgNC43MTZMOC4yNiA3SDZWNC43MTZ6TTUuNzA4IDNIMHYxNGgxMFY3LjMzNkw1LjcwOCAzeiIvPgogICAgPC9kZWZzPgogICAgPHVzZSBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9Ii41IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIC0zKSIgeGxpbms6aHJlZj0iI2EiLz4KPC9zdmc+Cg==)Non-Discrimination Policy](https://www.hioscar.com/nondiscriminationpolicy_english)
+  * [Accessibility](/legal/accessibility)
+
+![](https://www.facebook.com/tr?id=715605908547063&ev=PageView&noscript=1)
+![](https://accretivemedia.go2cloud.org/aff_i?offer_id=346&aff_id=1&source=lp)
+

@@ -1,0 +1,147 @@
+![Labelbox
+Logo](https://s7-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/195/400/original/On_light_background_\(1\).png?1691093207)
+
+[Back to jobs](https://job-boards.greenhouse.io/labelbox?gh_src=43db1c957us)
+
+# Forward Deployed Engineer
+
+San Francisco Bay Area
+
+Apply
+
+Labelbox is the data factory for generative AI, providing the highest quality
+training data for frontier and task-specific models. Labelbox’s comprehensive
+platform combines on-demand labeling services powered by the Alignerr
+community of highly-educated experts, who span all major languages and a
+diverse range of advanced subjects. They are available on-demand to rapidly
+generate new data for supervised fine-tuning, RLHF, and more. Labelbox’s
+software-first approach delivers unmatched control and transparency into the
+labeling process, leading to the generation of high-quality, consistent data
+at scale.
+
+Labelbox is backed by leading investors including SoftBank, Andreessen
+Horowitz, B Capital, Gradient Ventures, Databricks Ventures, and Kleiner
+Perkins. Our customers include Fortune 500 enterprises and leading AI labs.
+
+### **About the Role**
+
+This role requires an entrepreneurial mindset. You will operate like a
+technical cofounder of an AI startup. Maybe that’s what you will become after
+cutting your teeth at Labelbox!
+
+You will use a unique mix of engineering, product and sales to deliver data on
+high stakes projects for Frontier AI labs - think Google, Meta, Amazon. You
+will work with human data teams or AI researchers in customer organizations to
+produce the best datasets for model Evals, Supervised Finetuning, or ground
+truth data for advanced and emerging Reinforcement Learning techniques
+
+This role is based in our dedicated tech hub in San Francisco, CA. We use a
+hybrid work model of 2 days in the office per week.
+
+### **Your Day to Day**
+
+  * Understand what data Frontier AI labs need to measure LLM performance and improve model capabilities.
+
+  * Build and operate human data pipelines to produce the best data.
+
+  * Write code for pipelines and analyze data quality.
+
+  * Write specs for engineering to improve human data tools and workflows.
+
+### **About You**
+
+  * Master’s degree or above (Computer Science, Engineering, Mathematics, AI)
+
+  * Proficiency in Python
+
+  * Ability to communicate precisely and clearly
+
+  * Excellent project management skills
+
+  * Interest in the intersection of product, engineering and customer facing role
+
+_Labelbox strives to ensure pay parity across the organization and discuss
+compensation transparently.   The expected annual base salary range for United
+States-based candidates_ _ __is below. This range is not inclusive of any
+potential equity packages or additional benefits. Exact compensation varies
+based on a variety of factors, including skills and competencies, experience,
+and geographical location._
+
+Annual base salary range
+
+$140,000 \- $200,000 USD
+
+**Your Personal Data Privacy:  **Any personal information you provide Labelbox
+as a part of your application will be processed in accordance with Labelbox’s
+[Job Applicant Privacy notice](https://docs.labelbox.com/page/job-applicant-
+privacy-notice).
+
+Any emails from Labelbox team members will originate from a @labelbox.com
+email address. If you encounter anything that raises suspicions during your
+interactions, we encourage you to exercise caution and suspend or discontinue
+communications.
+
+## Apply for this job
+
+*
+
+indicates a required field
+
+First Name*
+
+Last Name*
+
+Preferred First Name
+
+Email*
+
+Phone*
+
+Resume/CV*
+
+AttachAttach
+
+Google Drive
+
+Enter manuallyEnter manually
+
+Accepted file types: pdf, doc, docx, txt, rtf
+
+Cover Letter
+
+AttachAttach
+
+Google Drive
+
+Enter manuallyEnter manually
+
+Accepted file types: pdf, doc, docx, txt, rtf
+
+* * *
+
+Website
+
+LinkedIn Profile
+
+How did you hear about us?
+
+Select...
+
+We are currently prioritizing candidates based in one of our hubs. Please
+select your current location from this list.*
+
+Select...
+
+Do you have experience working with data quality, problems, or dataset
+diversity?*
+
+Select...
+
+Submit application
+
+Powered by
+
+[Greenhouse](https://www.greenhouse.io/privacy-policy)
+
+Read our [Privacy Policy](https://www.greenhouse.io/privacy-policy)
+

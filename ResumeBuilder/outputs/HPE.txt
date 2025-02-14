@@ -1,0 +1,106 @@
+[![Figure
+Logo](https://s6-recruiting.cdn.greenhouse.io/external_greenhouse_job_boards/logos/400/015/500/original/Figure_Symbol_RGB_Black_\(10\).png?1696437839)](https://www.figure.ai)
+
+[Back to jobs](https://job-boards.greenhouse.io/figureai)
+
+New
+
+# Data Engineer
+
+Sunnyvale, CA
+
+Apply
+
+Figure is an AI Robotics company developing a general-purpose humanoid. Our
+humanoid is designed for corporate tasks targeting labor shortages and jobs
+that are undesirable or unsafe. We are based in Sunnyvale, CA, and require 5
+days/week in-office collaboration. It’s time to build.
+
+We are looking for an experienced **Data Engineer** to develop and optimize
+our data processing infrastructure and tools, enabling deep insights from
+robotic system logs.In this role you will transform robot logs and other
+sources of data to extract information, identify patterns, provide access to
+the data and visualization tools. Your work will help ensure that the robot is
+operating reliably at maximum performance, and inform engineering design
+trades and decisions.
+
+### **Responsibilities:**
+
+  * Develop and maintain pipelines and tools to transform robot logs to make it easier to access, visualize, and automatically detect events of interest. 
+  * Optimize data processing to reduce the time needed between data offload and the availability of the data to our engineering teams.
+  * Design and optimize data storage solutions for handling complex, high-volume time-series and structured data.
+  * Build and maintain database schemas and queries to support analytics and visualization of extracted patterns.
+  * Support mechanical, electrical, software, integration and test engineers with their needs to extract and visualize data.
+  * Develop dashboards and custom data visualizations tools to enable engineers to quickly extract information from the data and track robot performance.
+  * Integrate your solutions with existing data pipelines and our robot testing framework.
+
+### **Requirements:**
+
+  * Bachelor's or Master’s degree in Computer Science, Data Engineering, or a related field.
+  * 3+ years of experience in data engineering, preferably with time-series or log data processing.
+  * Proficiency in Python with experience in Pandas, Polars, or PySpark for large-scale data processing.
+  * Strong understanding of database design, indexing, and query optimization (SQL and NoSQL).
+  * Experience handling complex data formats such as Parquet, MCAP, or protobuf.
+  * Experience building custom web based data visualization tools (JavaScript, React…)
+  * Familiarity with data visualization tools like Grafana for real-time analysis and monitoring.
+  * Experience with distributed computing frameworks and cloud-based data storage solutions.
+  * Strong debugging skills and ability to work with lab teams to interpret robotic system logs.
+
+### **Bonus Qualifications:**
+
+  * Experience with CI/CD pipelines for automated data processing.
+  * Knowledge of robotics or embedded system logging frameworks.
+  * Familiarity with real-time data streaming and event-driven architectures.
+
+The US base salary range for this full-time position is between $150,000 -
+$250,000 annually.
+
+The pay offered for this position may vary based on several individual
+factors, including job-related knowledge, skills, and experience. The total
+compensation package may also include additional components/benefits depending
+on the specific role. This information will be shared if an employment offer
+is extended.
+
+  
+  
+
+## Apply for this job
+
+*
+
+indicates a required field
+
+First Name*
+
+Last Name*
+
+Email*
+
+Phone
+
+Resume/CV
+
+AttachAttach
+
+Dropbox
+
+Google Drive
+
+Enter manuallyEnter manually
+
+Accepted file types: pdf, doc, docx, txt, rtf
+
+* * *
+
+LinkedIn Profile
+
+Website
+
+Submit application
+
+Powered by
+
+[Greenhouse](https://www.greenhouse.io/privacy-policy)
+
+Read our [Privacy Policy](https://www.greenhouse.io/privacy-policy)
+

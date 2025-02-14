@@ -48,30 +48,30 @@ def removeSection(sec):
     if st.session_state[section]:
         st.session_state[section].pop()
 
-def getUserDetails():
+def getUserDetails(data=None):
     global SKILLSLIST
     if "work_experiences" not in st.session_state:
-        st.session_state["work_experiences"] = []
+        st.session_state["work_experiences"] = data.get("WorkExperience", []) if data else []
     if "education_institutions" not in st.session_state:
-        st.session_state["education_institutions"] = []
+        st.session_state["education_institutions"] = data.get("Education", []) if data else []
     if "projects" not in st.session_state:
-        st.session_state["projects"] = []
+        st.session_state["projects"] = data.get("Projects", []) if data else []
     
-    st.title("Default Resume")
+    st.title("Add Resume")
 
     st.header("Personal Details")
 
-    user_name = st.text_input("Name", placeholder="Enter Name here")
-    user_city = st.text_input("Location", placeholder="Enter City here")
-    user_phone = st.text_input("Phone", placeholder="Enter Phone no. here")
-    user_email = st.text_input("Email", placeholder="Enter email here")
-    user_linkedin = st.text_input("LinkedIn", placeholder="Enter linkedin url here")
-    user_github = st.text_input("GitHub", placeholder="Enter github url here")
+    user_name = st.text_input("Name", value=data.get("Name", "") if data else "")
+    user_city = st.text_input("Location", value=data.get("Location", "") if data else "")
+    user_phone = st.text_input("Phone", value=data.get("Phone", "") if data else "")
+    user_email = st.text_input("Email", value=data.get("Email", "") if data else "")
+    user_linkedin = st.text_input("LinkedIn", value=data.get("LinkedIn", "") if data else "")
+    user_github = st.text_input("GitHub", value=data.get("GitHub", "") if data else "")
     user_skills = st_tags(label='Enter Skills',
-                        text='Press enter \u23CE to add more',
-                        value=None,
-                        suggestions=SKILLSLIST,
-                        maxtags = 400, key='1')
+                           text='Press enter ⏎ to add more',
+                           value=data.get("Skills", []) if data else [],
+                           suggestions=SKILLSLIST,
+                           maxtags=400, key='1')
 
     st.header("Work Experience")
 

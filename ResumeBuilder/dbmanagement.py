@@ -100,20 +100,20 @@ ALLTABLES = {'user': user_table_query,
              'companies': companies_table_query,
              'hiringmanagers': hiring_manager_table_query}
 
-def getData():
-    cur.execute("SELECT * FROM user;")
+def getData(resumeNo):
+    cur.execute(f"SELECT * FROM user WHERE resume_id={resumeNo};")
     users = cur.fetchall()
 
-    cur.execute("SELECT * FROM userskills;")
+    cur.execute(f"SELECT * FROM userskills WHERE resume_id={resumeNo};")
     skills = cur.fetchall()
     
-    cur.execute("SELECT * FROM workexp;")
+    cur.execute(f"SELECT * FROM workexp WHERE resume_id={resumeNo};")
     workexp = cur.fetchall()
     
-    cur.execute("SELECT * FROM edu;")
+    cur.execute(f"SELECT * FROM edu WHERE resume_id={resumeNo};")
     edu = cur.fetchall()
     
-    cur.execute("SELECT * FROM proj;")
+    cur.execute(f"SELECT * FROM proj WHERE resume_id={resumeNo};")
     proj = cur.fetchall()
 
     return (users, skills, workexp, edu, proj)
@@ -151,6 +151,7 @@ def createTables(cur, tables_present):
 
 def insertToDb(con, cur, key, data):
     global ERRORS
+    data = data.replace("'", "")
     try:
         cur.execute(INSERTQUERY.format(key, data))
         con.commit()
@@ -163,14 +164,14 @@ def insertValues(con, cur, user_data, resume_counter):
     for key, value in ALLTABLES.items():
         if key == 'user':
             inp_data = f"""
-                        '{user_data.get('Email', '')}',
-                        '{user_data.get('Name', '')}',
-                        '{user_data.get('Phone', '')}',
-                        '{user_data.get('Location', '')}',
-                        '{user_data.get('LinkedIn', '')}',
-                        '{user_data.get('GitHub', '')}',
-                        '{user_data.get('Summary', '')}',
-                        '{resume_counter}'
+                        "{user_data.get('Email', '')}",
+                        "{user_data.get('Name', '')}",
+                        "{user_data.get('Phone', '')}",
+                        "{user_data.get('Location', '')}",
+                        "{user_data.get('LinkedIn', '')}",
+                        "{user_data.get('GitHub', '')}",
+                        "{user_data.get('Summary', '')}",
+                        "{resume_counter}"
                         """
             insertToDb(con, cur, key, inp_data)
         if key == 'userskills':
@@ -179,10 +180,10 @@ def insertValues(con, cur, user_data, resume_counter):
                 not_exists = cur.execute(f"SELECT * FROM userskills WHERE skill_id = '{hash_key}';")
                 if not_exists:
                     inp_data = f"""
-                                '{hash_key}',
-                                '{skill}',
-                                '{resume_counter}',
-                                '{user_data.get('Email', '')}'
+                                "{hash_key}",
+                                "{skill}",
+                                "{resume_counter}",
+                                "{user_data.get('Email', '')}"
                                 """
                     insertToDb(con, cur, key, inp_data)
         if key == 'workexp':
@@ -191,15 +192,15 @@ def insertValues(con, cur, user_data, resume_counter):
                 not_exists = cur.execute(f"SELECT * FROM workexp WHERE workexp_id = '{hash_key}';")
                 if not_exists:
                     inp_data = f"""
-                                '{hash_key}',
-                                '{work_experience.get('workexp_company', '')}',
-                                '{work_experience.get('workexp_role', '')}',
-                                '{work_experience.get('workexp_location', '')}',
-                                '{work_experience.get('workexp_from', '')}',
-                                '{work_experience.get('workexp_to', '')}',
-                                '{work_experience.get('workexp_description', '')}',
-                                '{resume_counter}',
-                                '{user_data.get('Email', '')}'
+                                "{hash_key}",
+                                "{work_experience.get('workexp_company', '')}",
+                                "{work_experience.get('workexp_role', '')}",
+                                "{work_experience.get('workexp_location', '')}",
+                                "{work_experience.get('workexp_from', '')}",
+                                "{work_experience.get('workexp_to', '')}",
+                                "{work_experience.get('workexp_description', '')}",
+                                "{resume_counter}",
+                                "{user_data.get('Email', '')}"
                                 """
                     insertToDb(con, cur, key, inp_data)
         if key == 'proj':
@@ -208,14 +209,14 @@ def insertValues(con, cur, user_data, resume_counter):
                 not_exists = cur.execute(f"SELECT * FROM proj WHERE proj_id = '{hash_key}';")
                 if not_exists:
                     inp_data = f"""
-                                '{hash_key}',
-                                '{project.get('proj_title', '')}',
-                                '{project.get('proj_link', '')}',
-                                '{project.get('proj_from', '')}',
-                                '{project.get('proj_to', '')}',
-                                '{project.get('proj_description', '')}',
-                                '{resume_counter}',
-                                '{user_data.get('Email', '')}'
+                                "{hash_key}",
+                                "{project.get('proj_title', '')}",
+                                "{project.get('proj_link', '')}",
+                                "{project.get('proj_from', '')}",
+                                "{project.get('proj_to', '')}",
+                                "{project.get('proj_description', '')}",
+                                "{resume_counter}",
+                                "{user_data.get('Email', '')}"
                                 """
                     insertToDb(con, cur, key, inp_data)
         if key == 'edu':
@@ -224,19 +225,16 @@ def insertValues(con, cur, user_data, resume_counter):
                 not_exists = cur.execute(f"SELECT * FROM edu WHERE edu_id = '{hash_key}';")
                 if not_exists:
                     inp_data = f"""
-                                '{hash_key}',
-                                '{education.get('edu_institution', '')}',
-                                '{education.get('edu_degree', '')}',
-                                '{education.get('edu_major', '')}',
-                                '{education.get('edu_from', '')}',
-                                '{education.get('edu_to', '')}',
-                                '{resume_counter}',
-                                '{user_data.get('Email', '')}'
+                                "{hash_key}",
+                                "{education.get('edu_institution', '')}",
+                                "{education.get('edu_degree', '')}",
+                                "{education.get('edu_major', '')}",
+                                "{education.get('edu_from', '')}",
+                                "{education.get('edu_to', '')}",
+                                "{resume_counter}",
+                                "{user_data.get('Email', '')}"
                                 """
                     insertToDb(con, cur, key, inp_data)
-
-        cur.execute(f"SELECT * FROM {key};")
-        st.write(cur.fetchall())
 
 
 def addToDb(data, jsonfile):
@@ -244,18 +242,23 @@ def addToDb(data, jsonfile):
 
     resume_counter = get_resume_counter(jsonfile)
 
-    st.write(data)
-    list_tables_query = """SELECT name FROM sqlite_master
+    try:
+        list_tables_query = """SELECT name FROM sqlite_master
                            WHERE type='table';"""
 
-    cur.execute(list_tables_query)
-    tables = [table[0] for table in cur.fetchall()]
-    createTables(cur, tables_present=tables)
+        cur.execute(list_tables_query)
+        tables = [table[0] for table in cur.fetchall()]
+        createTables(cur, tables_present=tables)
+    except:
+        st.toast("No Databases found yet, turn on 'Edit Mode' and add data first")
+    
+    
 
     insertValues(CONN, cur, data, resume_counter)
+    st.toast(f"Added data to database with resumeID: {resume_counter}")
 
     if not ERRORS:
         resume_counter += 1
         put_resume_counter(resume_counter, jsonfile)
-    
+    CONN.close()
 

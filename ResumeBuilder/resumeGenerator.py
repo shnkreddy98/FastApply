@@ -215,6 +215,7 @@ class ResumeGenerator:
         font = style.font
         font.name = "Times New Roman"  # Set default font to Times New Roman
         font.size = Pt(self.DEFAULT_FONT_SIZE)
+        print('breakpoint')
         sections = [
             Section("Header", lambda: self._add_header_section(data)),
             Section("Experience", lambda: self._add_experience_section(data['WorkExperience'])),
